@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{machinist_mongo}
-  s.version = "1.2.0"
+  s.version = "2.0.0.beta.1"
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Nicolas Mérouze", "Cyril Mougel"]
-  s.date = %q{2011-01-12}
+  s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
+  s.authors = ["Nicolas Merouze", "Cyril Mougel"]
+  s.date = %q{2010-09-05}
   s.email = %q{nicolas.merouze@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -36,12 +36,12 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<machinist>, ["~> 1.0.6"])
+      s.add_runtime_dependency(%q<machinist>, ["~> 2.0.0.beta2"])
     else
-      s.add_dependency(%q<machinist>, ["~> 1.0.6"])
+      s.add_dependency(%q<machinist>, ["~> 2.0.0.beta2"])
     end
   else
-    s.add_dependency(%q<machinist>, ["~> 1.0.6"])
+    s.add_dependency(%q<machinist>, ["~> 2.0.0.beta2"])
   end
 end
 
